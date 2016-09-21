@@ -1,0 +1,731 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Single Ad</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<!-- Custom Theme files -->
+<!--theme-style-->
+<link href="css/jewel_style.css"  rel='stylesheet' type='text/css'>
+<link href="css/single-jewel.css" rel="stylesheet" type="text/css" media="all" />
+
+
+         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+            <link href="css/plugins/jquery.tag-editor.css" rel="stylesheet">
+            <link href="jQueryAssets/jquery.ui.autocomplete.min.css" rel="stylesheet" type="text/css">
+         <script src="js/plugins/jquery.tag-editor.min.js"></script>
+         <script src="js/plugins/jquery.caret.js"></script>
+         <script src="jQueryAssets/jquery.ui-1.10.4.autocomplete.min.js"></script>
+
+
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+
+<!--fonts-->
+
+<!--//fonts-->
+
+<!-- start menu -->
+		
+<link rel="stylesheet" href="css/etalage.css">
+
+<script src="js/plugins/jquery.etalage.min.js"></script>
+		<script>
+			jQuery(document).ready(function($){
+				$('#etalage').etalage({
+					thumb_image_width:300,
+					thumb_image_height: 400,
+					source_image_width: 900,
+					source_image_height: 1200,
+					show_hint: false,
+					small_thumbs:4,
+					smallthumb_hide_single:true,
+					smallthumb_select_on_hover:true,
+					magnifier_invert: false,
+					magnifier_opacity:0,
+					show_icon: false,
+					zoom_easing: true,
+				});
+
+			});
+		</script>
+        
+        
+  
+        
+</head>
+<body data-spy="scroll" data-offset="0" data-target="#jewel-nav-bar">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3 text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">×</button>
+        <br><br>
+                                <form action="#">
+                                  <div class="form-group">
+                                    <label for="contain">Category</label>
+                                    <input class="form-control" type="text" placeholder="Ring, Chain, etc....." />
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="contain">Metal Type</label>
+                                    <input class="form-control" type="text" placeholder="Gold, Diamond, etc....." />
+                                  </div>
+                                  <hr>
+                                  <h4>Grams</h4>
+                                   <b>0.1</b>&nbsp;<input type="number" class="range" placeholder="min" step="any" /><span> <input type="number" class="range" placeholder="max" step="any" />                                    <b>1000</b></span>
+                                 <hr>
+
+
+                   <textarea id="tag-selector"></textarea>
+                   <hr>
+
+                         <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                         </form>
+ </div>
+    </div>
+  </div>
+</div>
+
+
+      <div id="wrap">
+      <div class="container" id="first">
+   <a href="#"><i class="glyphicon glyphicon-log-in"></i>Login/Reg</a>
+  
+            <p class="brand"><b>Jewel</b></p>
+                              
+            
+            <div class="form-group" id="area">
+                                   
+                                    <select class="form-control">
+                                        <option value="0" selected>Area</option>
+                                        <option value="1" >North-Chennai</option>
+                                        <option value="2">South-Chennai</option>
+                                        <option value="3">East-Chennai</option>
+                                        <option value="4">West-Chennai</option>
+                                       
+                                        
+                                    </select>
+                                  </div>
+                                  
+             
+        </div>
+      
+    <div class="jewel-top-menu">
+            <div class="container">
+                <!-- Static navbar -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                               
+                                
+                                <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuHeader" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Filters
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuHeader">
+    <li class="dropdown-header">Caret</li>
+    <li>
+                                 <form>
+                                <div class="form-group">
+                               
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (10)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (12)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (15)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (14)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-default btn-sm btn-primary">Apply</button>
+
+                            </form>
+    </li>
+    
+    
+    
+    <li class="dropdown-header">Grams</li>
+    <li>
+                           <form>
+                                <div class="form-group">
+                               
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (10)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (12)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (15)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (14)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-default btn-sm btn-primary">Apply</button>
+
+                            </form>
+    
+    </li>
+    
+    <li class="dropdown-header">Grams</li>
+    <li> 
+    <form>
+                                <div class="form-group">
+                               
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (10)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (12)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (15)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (14)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-default btn-sm btn-primary">Apply</button>
+
+                            </form>
+                            </li>
+                            
+                             <li class="dropdown-header">Grams</li>
+    <li> 
+    <form>
+                                <div class="form-group">
+                               
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (10)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (12)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (15)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (14)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-default btn-sm btn-primary">Apply</button>
+
+                            </form>
+                            </li>
+                            
+                             <li class="dropdown-header">Grams</li>
+    <li> 
+    <form>
+                                <div class="form-group">
+                               
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (10)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (12)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (15)
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox">Link (14)
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-default btn-sm btn-primary">Apply</button>
+
+                            </form>
+                            </li>
+                            
+  </ul>
+</div> 
+                                
+                                
+                                
+                                
+                        </div>
+                        <div class="navbar-collapse collapse" id="jewel-nav-bar">
+                        
+                        </div><!--/.nav-collapse -->
+                       
+                    </div><!--/.container-fluid -->
+                </div><!--/.navbar -->
+            </div> <!-- /container -->
+            
+            
+            <div class="container" style="padding-top:10px">
+	<div class="row">
+		<div class="col-md-12 col-sm-10">
+        
+            <div class="input-group" id="adv-search" data-toggle="modal" data-target="#myModal" >
+                <input type="text" id="search" class="form-control" onClick="" placeholder="Search here....." />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                       
+                        <button type="button" class="btn btn-primary" ><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+           
+          </div>
+        </div>
+	</div>
+    
+    
+         </div> <!-- /container -->
+           
+            
+           
+
+<div class="content">
+	<div class="container">
+    
+		<div class="single">
+              <ol class="breadcrumb">
+		        <li><a href="index.html">HOME</a></li>
+                <li><a href="alldisplay.html">PRODUCTS</a></li>
+		      </ol>
+    
+				<div class="col-md-9 top-in-single">
+					<div class="col-md-5 single-top">	
+						<ul id="etalage">
+							<li>
+									<img class="etalage_thumb_image img-responsive" src="images/single/carousal-4 - Copy.jpg" alt="" >
+									<img class="etalage_source_image img-responsive" src="images/single/carousal-4.jpg" alt="" >
+							</li>
+							<li>
+								<img class="etalage_thumb_image img-responsive" src="images/single/chain-1 - Copy.jpg" alt="" >
+								<img class="etalage_source_image img-responsive" src="images/single/chain-1.jpg" alt="" >
+							</li>
+							<li>
+								<img class="etalage_thumb_image img-responsive" src="images/single/chain-3 - Copy.jpg" alt=""  >
+								<img class="etalage_source_image img-responsive" src="images/single/chain-3.jpg" alt="" >
+							</li>
+						    <li>
+								<img class="etalage_thumb_image img-responsive" src="images/single/chian-2 - Copy.jpg"  alt="" >
+								<img class="etalage_source_image img-responsive" src="images/single/chian-2.jpg" alt="" >
+							</li>
+						</ul>
+
+					</div>	
+					<div class="col-md-7 single-top-in">
+						<div class="single-para">
+		
+							<div class="star-on">
+								<ul>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+									<li><a href="#"><i> </i></a></li>
+								</ul>
+								     
+			                </div>
+                              <div class="span span1">
+						<h4 class="left">Product Code</h4>
+						<p class="right">UHQL17958</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span2">
+						<h4 class="left">Metal</h4>
+						<p class="right">Gold</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span3">
+						<h4 class="left">Weight</h4>
+						<p class="right">0.25g</p>
+						<div class="clearfix"></div>
+					</div>
+					<div class="span span4">
+						<h4 class="left">Purity (Caret)</h4>
+						<p class="right">22 caret</p>
+						<div class="clearfix"></div>
+					</div>
+                    <div class="span span4">
+						<h4 class="left">Shop</h4>
+						<p class="right"><a href="singleshop.html">Dizzle & Dazzle</a></p>
+						<div class="clearfix"></div>
+					</div>
+		
+				 </div> <!-- /.single-para -->
+							
+					</div>  <!-- /.col-md-7 single-top-in -->
+					
+				<div class="clearfix"> </div>
+				  <!----- tabs-box ---->
+		<div class="sap_tabs">	
+				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						  <ul class="resp-tabs-list">
+						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>Product Description</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Shop information</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Origin</span></li>
+							  <div class="clearfix"></div>
+						  </ul>				  	 
+							<div class="resp-tabs-container">
+							    <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Product Description</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+									<div class="facts">
+									  <div class="product-table">
+				                             <div class="item-sec">
+					                           <h4>Features</h4>
+					                              <table class="table table-bordered">
+					                                  <tbody>
+							                           <tr>
+								                        <td><p>METAL</p></td>
+								                        <td><p>Gold</p></td>
+							                           </tr>
+							                           <tr>
+								                        <td><p>WEIGHT</p></td>
+								                        <td><p>0.25g</p></td>
+							                           </tr>
+                                                       <tr>
+								                        <td><p>CARET</p></td>
+								                        <td><p>22 Caret</p></td>
+							                           </tr>														
+						                              </tbody>
+						                          </table>
+				                              </div>		
+				 <div class="item-sec">
+					 <h4>Additional info</h4>
+					 <table class="table table-bordered">
+					 <tbody>
+                            <tr>
+								<td><p>TYPE</p></td>
+								<td><p>Earring & Necklace Set</p></td>
+							</tr> 
+							<tr>
+								<td><p>PRODUCT CODE</p></td>
+								<td><p>UHQL17958</p></td>
+							</tr>
+							<tr>
+								<td><p>SIZE</p></td>
+								<td><p>5mm * 6mm</p></td>
+							</tr>
+							<tr>
+								<td><p>STONE</p></td>
+								<td><p>Diamond</p></td>
+							</tr>
+							<tr>
+								<td><p>STONE COLOR</p></td>
+								<td><p>G-H</p></td>
+							</tr>
+							<tr>
+								<td><p>OCCASION</p></td>
+								<td><p>Wedding & Engagement</p></td>
+							</tr>
+							
+							<tr>
+								<td><p>IDEAL FOR</p></td>
+								<td><p>All aged women</p></td>
+							</tr>							
+						</tbody>
+						</table>
+				 </div>	
+			</div>        
+							        </div>
+							    	</div>
+							      <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>Additional Information</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+									<div class="facts">	
+                                    <h3> DIZZLE & DAZZLE</h3>								
+										<p >  Jewellery or jewelry consists of small decorative items worn for personal adornment, such as brooches, rings, necklaces, earrings, and bracelets. Jewellery may be attached to the body or the clothes, and the term is restricted to durable ornaments, excluding flowers for example. For many centuries metal, often combined with gemstones, has been the normal material for jewellery, but other materials such as shells and other plant materials may be used. It is one of the oldest type of archaeological artefact – with 100,000-year-old beads made from Nassarius shells thought to be the oldest known jewellery.  </p>
+										 
+                                    <a class="btn btn-aquablue" href="singleshop.html" role="button">More info</a>
+                               
+							        </div>	
+								</div>									
+							      <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>Reviews</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+									 <div class="facts">
+									  <p >  Jewellery or jewelry consists of small decorative items worn for personal adornment, such as brooches, rings, necklaces, earrings, and bracelets. Jewellery may be attached to the body or the clothes, and the term is restricted to durable ornaments, excluding flowers for example. For many centuries metal, often combined with gemstones, has been the normal material for jewellery, but other materials such as shells and other plant materials may be used. It is one of the oldest type of archaeological artefact – with 100,000-year-old beads made from Nassarius shells thought to be the oldest known jewellery.  </p>
+										<ul>
+											<li>jewel name</li>
+											<li>wastage</li>
+											<li>service tax</li>
+											<li>jewel</li>
+											<li>jewel</li>
+											<li>jewel</li>
+										</ul>     
+							     </div>	
+							 </div>
+					      </div>
+					 </div>
+					 <script src="js/plugins/easyResponsiveTabs.js" type="text/javascript"></script>
+		                      <script type="text/javascript">
+			                          $(document).ready(function () {
+			                          $('#horizontalTab').easyResponsiveTabs({
+			                          type: 'default', //Types: default, vertical, accordion           
+			                          width: 'auto', //auto or any width like 600px
+			                          fit: true   // 100% fit in a container
+			                             });
+			                          });
+			                  </script>	
+            </div> <!-- /.sap-tabs -->
+				</div> <!-- /.top-in-single col-md-9 -->
+                <div class="col-md-3 at-single">
+					<div class="single-bottom">
+                      <h4>LINK</h4>
+						<div class="tab1">
+							 <ul class="place">								
+								 <li class="sort"><img src="images/do.png" alt="">Ethinic</li>
+								 <li class="by"></li>
+									<div class="clearfix"> </div>
+						  </ul>
+							 <div class="single-bottom">						
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+						     </div>
+					      </div>						  
+						  <div class="tab2">
+							 <ul class="place">								
+								 <li class="sort"><img src="images/do.png" alt="">Designer</li>
+								 <li class="by"></li>
+									<div class="clearfix"> </div>
+						    </ul>
+							 <div class="single-bottom">						
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>									
+						     </div>
+					      </div>
+						  <div class="tab3">
+							 <ul class="place">								
+								 <li class="sort"><img src="images/do.png" alt="">Antique</li>
+								 <li class="by"></li>
+									<div class="clearfix"> </div>
+						    </ul>
+							 <div class="single-bottom">						
+									<a href="#"><p>link</p></a>
+                                    <a href="#"><p>link</p></a>
+						     </div>
+					      </div>
+						  <div class="tab4">
+							 <ul class="place">								
+								 <li class="sort"><img src="images/do.png" alt="">Jewellery</li>
+								 <li class="by"></li>
+									<div class="clearfix"> </div>
+						    </ul>
+							 <div class="single-bottom">						
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+						     </div>
+					      </div>
+						  <div class="tab5">
+							 <ul class="place">								
+								 <li class="sort"><img src="images/do.png" alt="">Specials</li>
+								 <li class="by"></li>
+									<div class="clearfix"> </div>
+						    </ul>
+							 <div class="single-bottom">						
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+									<a href="#"><p>link</p></a>
+						     </div>
+					      </div>
+						  
+						  <!--script-->
+						<script>
+							$(document).ready(function(){
+								$(".tab1 .single-bottom").hide();
+								$(".tab2 .single-bottom").hide();
+								$(".tab3 .single-bottom").hide();
+								$(".tab4 .single-bottom").hide();
+								$(".tab5 .single-bottom").hide();
+								
+								$(".tab1 ul").click(function(){
+									$(".tab1 .single-bottom").slideToggle(300);
+									$(".tab2 .single-bottom").hide();
+									$(".tab3 .single-bottom").hide();
+									$(".tab4 .single-bottom").hide();
+									$(".tab5 .single-bottom").hide();
+								})
+								$(".tab2 ul").click(function(){
+									$(".tab2 .single-bottom").slideToggle(300);
+									$(".tab1 .single-bottom").hide();
+									$(".tab3 .single-bottom").hide();
+									$(".tab4 .single-bottom").hide();
+									$(".tab5 .single-bottom").hide();
+								})
+								$(".tab3 ul").click(function(){
+									$(".tab3 .single-bottom").slideToggle(300);
+									$(".tab4 .single-bottom").hide();
+									$(".tab5 .single-bottom").hide();
+									$(".tab2 .single-bottom").hide();
+									$(".tab1 .single-bottom").hide();
+								})
+								$(".tab4 ul").click(function(){
+									$(".tab4 .single-bottom").slideToggle(300);
+									$(".tab5 .single-bottom").hide();
+									$(".tab3 .single-bottom").hide();
+									$(".tab2 .single-bottom").hide();
+									$(".tab1 .single-bottom").hide();
+								})	
+								$(".tab5 ul").click(function(){
+									$(".tab5 .single-bottom").slideToggle(300);
+									$(".tab4 .single-bottom").hide();
+									$(".tab3 .single-bottom").hide();
+									$(".tab2 .single-bottom").hide();
+									$(".tab1 .single-bottom").hide();
+								})	
+							});
+						</script>
+						<!-- script -->	
+					</div>
+					<div class="single-bottom">
+						<div class="widget">
+                          <h4>LINK</h4>
+					<ul class="tags">
+						<li><a href="#">Web design</a></li>
+                        <li><a href="#">Trends</a></li>
+                        <li><a href="#">Development</a></li>
+						<li><a href="#">Shops</a></li>
+						<li><a href="#">Technology</a></li>
+						<li><a href="#">Internet</a></li>
+					</ul>
+				</div>
+					</div>
+					<div class="single-bottom">
+						<h4>LINK</h4>
+						<ul>
+						<li>
+							<p>Categories</p>
+						</li>
+						<li>
+							<p>Categories</p>
+						</li>
+						<li>
+							<p>Categories</p>
+						</li>
+						<li>
+							<p>Categories</p>
+						</li>
+						<li>
+							<p>Categories</p>
+						</li>
+						</ul>
+				  </div>
+				</div>  <!-- /.col-md-3 at-single -->
+				<div class="clearfix"> </div>
+						
+		  </div> <!-- /.single -->
+        </div> <!-- /.container -->
+
+
+	</div> <!-- /.content -->
+    <div class="container">
+    search
+        </div> <!-- /.container -->
+    
+   
+
+                             <div class="footer"> 
+                            
+                            </div>
+           
+           
+           
+           
+           
+            </div>  <!-- /#wrap --> 
+            
+           
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script src="js/plugins/jquery.simpler-sidebar.min.js"></script>
+        
+        
+           
+           
+          <script src="js/plugins/smoothscroll.js" type="text/javascript"></script>
+          <script src="js/plugins/stickUp.min.js"  type="text/javascript"></script>
+          <script src="js/jewel_script.js"  type="text/javascript"></script>
+          <script src="js/bootstrap.min.js" type="text/javascript"></script>
+          
+          <script><!-- /tags -->
+  $(selector).tagEditor({key1: value1, key2: value2});
+
+// examples
+
+// assign tag editor to textarea - existing text will be used as initial tags
+$('#tag-selector').tagEditor();
+
+// assign tag editor to text input with initial tags
+$('input[type="text"]').tagEditor({ initialTags: ['tag1', 'tag2', 'tag3'] });
+
+// use jQuery UI autocomplete
+$('#tag-selector').tagEditor({ autocomplete: { 'source': '/url/', minLength: 3, maxLength: 5 } });
+  </script>
+  <script>
+ $('#tag-selector').tagEditor({
+    autocomplete: {
+        delay: 0, // show suggestions immediately
+        position: { collision: 'flip' }, // automatic menu position up/down
+        source: ['Lakshmi jewellery', 'Mustafa Gold mart', 'Sonali jewellers','Lalitha Jewellery','Nathella Jewellers', 'Tanishq','Grt','Divine Collections']
+    },
+    forceLowercase: false,
+    placeholder: 'Add Shops...'
+});
+  </script><!-- /tags -->
+  <script type="text/javascript">
+$(function() {
+	$( "#Autocomplete1" ).autocomplete(); 
+});
+    </script>
+  
+  
+</body>
+</html>
